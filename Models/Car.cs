@@ -20,13 +20,8 @@ namespace Dealership.Models
 
     public void UpdateWeekendPrice()
     {
-      Price = (Price - (Price * 10 / 100));
+      Price = (Price - (Price / 10));
     }
-
-    // public bool SaleWeekend(string response)
-    // {
-    //   return (response.ToUpper() == "Y");
-    // }
 
     // public void SetPrice(int newPrice)
     // {
