@@ -49,8 +49,7 @@ namespace Dealership
 
     bool SaleWeekend(string response)
     {
-      response.ToUpper();
-      return (response == "SATURDAY" || response == "SUNDAY");
+      return (response.ToUpper() == "SATURDAY" || response.ToUpper() == "SUNDAY");
     }
 
       
