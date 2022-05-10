@@ -6,11 +6,18 @@
 <body>
   @using CarDealership.Models
 
+   <h1>Car Display</h1>
+
   <ul>
-  @foreach (Car car in Model.carList)
-  {
-    <li>@car.MakeModel</li>
-  }
+    @foreach (Car car in Model)
+    {
+      <h3>Car</h3>
+      <ul>
+        <li>@car.MakeModel</li>
+        <li>@car.Price</li>
+        <li>@car.Miles</li>
+      </ul>
+    }
   </ul>
 </body>
 </html>
