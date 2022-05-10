@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Cars</title>
+</head>
+<body>
+  @using CarDealership.Models
+
+  <ul>
+  @foreach (Car car in Model.carList)
+  {
+    <li>@car.MakeModel</li>
+  }
+  </ul>
+</body>
+</html>
